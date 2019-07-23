@@ -1,4 +1,4 @@
-FROM clearlinux:latest AS builder
+yea, i'm not going to build! FROM clearlinux:latest AS builder
 
 # Move to latest Clear Linux release to ensure
 # that the swupd command line arguments are
