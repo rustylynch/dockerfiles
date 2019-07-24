@@ -1,5 +1,4 @@
 FROM clearlinux:latest AS builder
-
 # Move to latest Clear Linux release to ensure
 # that the swupd command line arguments are
 # correct
@@ -38,6 +37,7 @@ RUN mkdir -p /var/www/html \
 	&& mkdir -p /var/log/httpd \
 	&& mkdir -p /run/httpd \
 	&& mkdir -p /usr/local/bin
+
 
 COPY index.html /var/www/html/
 COPY httpd-foreground /usr/local/bin/
