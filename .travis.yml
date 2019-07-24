@@ -12,5 +12,5 @@ script:
     done
   # Kick off docker builds for any directories containg a docker file
   - for i in ${!DIRS[@]}; do
-        docker build -t $i $i;
+        echo docker build -t $i $i;
     done
