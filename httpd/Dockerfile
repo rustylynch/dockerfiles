@@ -42,5 +42,5 @@ COPY index.html /var/www/html/
 COPY httpd-foreground /usr/local/bin/
 RUN chmod +x /usr/local/bin/httpd-foreground
 
-EXPOSE 80
+EXPOSE 80 90
 CMD ["httpd-foreground"]
