@@ -4,6 +4,7 @@ services:
   - docker
 
 script:
+  - echo $0
   # build a list of directories that have code changes
   - declare -A DIRS
   - for i in `git diff --name-only HEAD~1`; do
