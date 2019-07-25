@@ -29,7 +29,7 @@ RUN cd / && \
 FROM clearlinux/os-core:latest
 MAINTAINER qi.zheng@intel.com
 
-BROKENCOPY --from=builder /install_root /
+COPY --from=builder /install_root /
 
 #default configuration on /usr/share/defaults/httpd/httpd.conf
 #create folder for default DocumentRoot and LOG/PidFile path
