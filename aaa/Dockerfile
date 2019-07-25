@@ -7,7 +7,7 @@ RUN swupd update --no-boot-update $swupd_args
 
 # Grab os-release info from the minimal base image so
 # that the new content matches the exact OS version
-COPY --from=clearlinux/os-core:latest /usr/lib/os-release /
+BROKENCOPY --from=clearlinux/os-core:latest /usr/lib/os-release /
 
 # Install additional content in a target directory
 # using the os version from the minimal base
