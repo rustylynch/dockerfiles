@@ -39,6 +39,7 @@ RUN mkdir -p /var/www/html \
 	&& mkdir -p /run/httpd \
 	&& mkdir -p /usr/local/bin
 
+
 COPY index.html /var/www/html/
 COPY httpd-foreground /usr/local/bin/
 RUN chmod +x /usr/local/bin/httpd-foreground
