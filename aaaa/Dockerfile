@@ -3,7 +3,7 @@ FROM clearlinux:latest AS builder
 # Move to latest Clear Linux release to ensure
 # that the swupd command line arguments are
 # correct
-RUN swupd updatex --no-boot-update $swupd_args
+RUN swupd update --no-boot-update $swupd_args
 
 # Grab os-release info from the minimal base image so
 # that the new content matches the exact OS version
